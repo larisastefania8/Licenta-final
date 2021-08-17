@@ -1,0 +1,38 @@
+{
+  "name": "licenta",
+  "version": "1.0.0",
+  "description": "licenta",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "larisa",
+  "license": "MIT",
+  "dependencies": {
+    "@react-leaflet/core": "^1.0.2",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "kepler.gl": "^2.5.4",
+    "leaflet": "^1.7.1",
+    "mongoose": "^5.13.2",
+    "nodemon": "^2.0.9",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-google-map": "^3.1.1",
+    "react-leaflet": "^3.1.0",
+    "react-map-gl": "^6.1.16",
+    "react-palm": "^3.3.7",
+    "styled-components": "^5.3.0",
+    "swr": "^0.5.6"
+  },
+  "devDependencies": {
+    "web-vitals": "^2.1.0"
+  }
+}
